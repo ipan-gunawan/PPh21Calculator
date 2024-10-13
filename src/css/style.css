@@ -49,6 +49,25 @@ html {
   align-items: center;
 }
 
+#wrapper .container .income-input input {
+  width: 15em;
+  font-size: 2em;
+  padding: 0.3em;
+}
+
+#wrapper .container .income-input input::before {
+  content: ""; /* Membuat elemen pseudo */
+  position: absolute; /* Mengatur posisi */
+  top: -5px; /* Posisi atas */
+  left: -5px; /* Posisi kiri */
+  right: -5px; /* Posisi kanan */
+  bottom: -5px; /* Posisi bawah */
+  border-radius: 8px; /* Sudut membulat */
+  background: linear-gradient(45deg, #ff6b6b, #f0e130); /* Warna gradien */
+  z-index: 1; /* Menempatkan di belakang input */
+  padding: 2px; /* Jarak dalam untuk efek border */
+}
+
 #wrapper .container .income h2 {
   text-align: center;
 }
