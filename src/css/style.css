@@ -25,10 +25,30 @@ html {
 }
 
 #wrapper .description {
-  text-align: center;
   font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper .description p {
+  max-width: 35em;
+  text-align: center;
 }
 
 #wrapper .description .pph {
   font-weight: bold;
+}
+
+#wrapper .container {
+  padding: 5em 2em 2em 2em;
+}
+
+#wrapper .container .income-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper .container .income h2 {
+  text-align: center;
 }
