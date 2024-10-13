@@ -1,7 +1,34 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#wrapper {
+  padding: 2em;
+}
+
 #wrapper .title {
   text-align: center;
 }
 
+#wrapper .title h1 {
+  font-size: 2.7em;
+  background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
 #wrapper .description {
   text-align: center;
+  font-size: 1.125rem;
+}
+
+#wrapper .description .pph {
+  font-weight: bold;
 }
