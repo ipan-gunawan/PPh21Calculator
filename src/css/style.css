@@ -28,8 +28,11 @@ header .nav-wrapper {
   align-items: center;
 }
 
-header .nav-wrapper .nav-logo {
-  color: #fff;
+header .nav-wrapper .nav-logo h2 {
+  background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 850;
 }
 
 header .nav-wrapper .nav-link ul {
