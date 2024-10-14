@@ -53,19 +53,17 @@ html {
   width: 15em;
   font-size: 2em;
   padding: 0.3em;
+  background: white;
+  border: 3.5px solid transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
-#wrapper .container .income-input input::before {
-  content: ""; /* Membuat elemen pseudo */
-  position: absolute; /* Mengatur posisi */
-  top: -5px; /* Posisi atas */
-  left: -5px; /* Posisi kiri */
-  right: -5px; /* Posisi kanan */
-  bottom: -5px; /* Posisi bawah */
-  border-radius: 8px; /* Sudut membulat */
-  background: linear-gradient(45deg, #ff6b6b, #f0e130); /* Warna gradien */
-  z-index: 1; /* Menempatkan di belakang input */
-  padding: 2px; /* Jarak dalam untuk efek border */
+#wrapper .container .income-input input:focus {
+  outline: none;
 }
 
 #wrapper .container .income h2 {

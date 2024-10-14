@@ -31,8 +31,16 @@
         <div class="income">
           <h2>Enter your income <span>per month</span></h2>
         </div>
+
         <div class="income-input">
-          <input type="text" placeholder="XXX.XXX.XXX" name="income" required />
+          <input
+            type="text"
+            placeholder="XXX.XXX.XXX"
+            name="income"
+            required
+            pattern="[0-9]*"
+            inputmode="numeric"
+          />
         </div>
       </div>
     </section>
