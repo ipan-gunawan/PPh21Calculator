@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: rgba(17, 24, 39, 0.3);
+  background-color: rgba(17, 24, 39, 0.302);
   backdrop-filter: blur(5px);
   box-shadow: 0 1.2px 3px rgba(234, 234, 234, 0.3);
   width: 100%;
@@ -63,6 +63,13 @@ header .nav-wrapper .nav-link ul li a {
   font-weight: bold;
   display: flex;
   align-items: center;
+}
+
+header .nav-wrapper .nav-link ul li:nth-child(1) a:hover,
+header .nav-wrapper .nav-link ul li:nth-child(2) a:hover,
+header .nav-wrapper .nav-link ul li:nth-child(3) a:hover,
+header .nav-wrapper .nav-link ul li:nth-child(4) a:hover {
+  color: #d2007b;
 }
 
 header .nav-wrapper .nav-link ul li:last-child {
@@ -140,17 +147,25 @@ header .nav-wrapper .nav-link ul li:last-child a svg {
   width: 15em;
   font-size: 2.3em;
   padding: 0.3em;
-  background: white;
+  background: #1a253c;
   border: 3.5px solid transparent;
   border-radius: 8px;
-  background-image: linear-gradient(white, white),
+  background-image: linear-gradient(#1a253c, #1a253c),
     linear-gradient(315deg, #fff000 0%, #ed008c 74%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  backdrop-filter: blur(5px);
+  font-weight: 700;
 }
 
 #wrapper .container .income-input input:focus {
   outline: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+#wrapper .container .income-input input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #wrapper .container .income h2 {
